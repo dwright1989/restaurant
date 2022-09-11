@@ -1,3 +1,4 @@
 import './style.css';
 import bannerImg from './background.jpg';
-console.log("test");
+import drinkImg from './drink.jpg';
+import burgerImg from './burger.jpg';

@@ -52,7 +52,7 @@ h1{
 
 /* ------------- HOME ------------*/
 
-#home-content{
+.tab-content{
     background-color: white;
     width: 50%;
     height: 90vh;
@@ -78,6 +78,44 @@ h1{
 }
 
 h2{
-    padding-bottom: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* ------------- MENU ------------*/
+
+#menu-items{
+    display: flex;
+    margin: auto;
+    height: 15rem;
+    justify-content: space-evenly;
+}
+
+#food-menu{
+    background: url(./burger.jpg);
+    background-size: 127%;
+    background-repeat: no-repeat;
+    width: 15rem;
+    cursor: pointer;
+}
+
+#drinks-menu{
+   background: url(./drink.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 15rem;
+   cursor: pointer;
+}
+
+#menu-para{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.menu-label{
+    text-align: center;
+    color: white;
+    background-color: black;
 }
 
