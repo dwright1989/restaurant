@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+    
+
+/* ------------- BANNER ------------*/
+
+#banner{
+    height: 5rem;
+    background-color: black;
+    color: white;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+h1{
+    border: 5px double white;
+    padding: 2rem 0rem 2rem 0rem;
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* ------------- NAVIGATION ------------*/
+
+#navigation-buttons{
+    background-color: black;
+    margin: auto;
+    text-align: center;
+}
+
+.tab{
+    padding: 0rem 2rem 0rem 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.active-tab{
+    background-color: white;
+    color: black;
+}
+
+/* ------------- MAIN ------------*/
+
+.main-content{
+
+    background: url(./background.jpg);
+    background-size: 100%;
+    height: 100vh;
+}
