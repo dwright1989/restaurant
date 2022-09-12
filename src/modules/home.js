@@ -9,6 +9,7 @@ function loadHomePage(){
     home.appendChild(about);
     home.appendChild(openingHours);
     tab.appendChild(home);
+    assignClass();
     content.appendChild(tab);
 }
 
@@ -67,5 +68,18 @@ function loadOpeningHours(){
     openingHoursDiv.appendChild(timesDiv);
     return openingHoursDiv;
 }
+
+function assignClass(){
+    // Assign correct class
+    let homeLink = document.getElementById("homeLink");
+    homeLink.classList.add("active-tab");
+
+    //remove from others
+    let menuLink = document.getElementById("menuLink");
+    menuLink.classList.remove("active-tab");
+    let contactLink = document.getElementById("contactLink");
+    contactLink.classList.remove("active-tab");
+}
+
 
 export default loadHomePage;

@@ -9,8 +9,8 @@ This file loads the page and navigation bar*/
 
 import loadFullPage from './modules/initial';
 import loadHomePage from './modules/home';
-/*import loadMenuPage from './modules/menu';
-import loadContactPage from './modules/contact';*/
+import loadMenuPage from './modules/menu';
+/*import loadContactPage from './modules/contact';*/
 
 /* Add event listeners to the navigation bar */
 
@@ -30,7 +30,7 @@ function addEL(){
     const contactButton = document.getElementById('contactLink');
 
     homeButton.addEventListener('click', loadHomePage);
-    //menuButton.addEventListener('click', loadMenuPage);
+    menuButton.addEventListener('click', loadMenuPage);
     //contactButton.addEventListener('click', loadContactPage );
 }
 
