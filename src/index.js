@@ -8,8 +8,8 @@ import burgerImg from './burger.jpg';
 This file loads the page and navigation bar*/
 
 import loadFullPage from './modules/initial';
-/*import loadHomePage from './modules/home';
-import loadMenuPage from './modules/menu';
+import loadHomePage from './modules/home';
+/*import loadMenuPage from './modules/menu';
 import loadContactPage from './modules/contact';*/
 
 /* Add event listeners to the navigation bar */
@@ -20,18 +20,18 @@ loadPage();
 
 function loadPage(){
     loadFullPage();
-    //loadHomePage();
-    //addEL();
+    loadHomePage();
+    addEL();
 }
 
 function addEL(){
-    const homeButton = document.getElementById('home');
-    const menuButton = document.getElementById('menu');
-    const contactButton = document.getElementById('contact');
+    const homeButton = document.getElementById('homeLink');
+    const menuButton = document.getElementById('menuLink');
+    const contactButton = document.getElementById('contactLink');
 
     homeButton.addEventListener('click', loadHomePage);
-    menuButton.addEventListener('click', loadMenuPage);
-    contactButton.addEventListener('click', loadContactPage );
+    //menuButton.addEventListener('click', loadMenuPage);
+    //contactButton.addEventListener('click', loadContactPage );
 }
 
 

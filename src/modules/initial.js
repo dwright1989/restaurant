@@ -4,6 +4,8 @@ function loadFullPage(){
     let content = document.getElementById("content");
     let commonContentDiv = loadHeader();
     content.appendChild(commonContentDiv);
+    let tabContent = loadTab();
+    content.appendChild(tabContent);
 }
 
 function loadHeader(){
@@ -52,6 +54,12 @@ function loadNavigation(){
 
     return navigationDiv;
 
+}
+
+function loadTab(){
+    let tabDiv = document.createElement("div");
+    tabDiv.id = "tab";
+    return tabDiv;
 }
 
 export default loadFullPage;
